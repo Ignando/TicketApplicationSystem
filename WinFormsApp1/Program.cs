@@ -91,7 +91,75 @@ namespace WinFormsApp1
         Close();
     }
     //---------------------------------------------------------
+    private static void InvokeCalculate(Form1 form)
+{
+    // Simulate button click
+    form.GetType().GetMethod("BtnCalculate\_Click", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+        ?.Invoke(form, new object[] { null, EventArgs.Empty });
+}
 
+private static void InvokeClear(Form1 form)
+{
+    form.GetType().GetMethod("BtnClear\_Click", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+        ?.Invoke(form, new object[] { null, EventArgs.Empty });
+}
+
+private static void InvokeExit(Form1 form)
+{
+    form.GetType().GetMethod("BtnExit\_Click", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+        ?.Invoke(form, new object[] { null, EventArgs.Empty });
+}
+
+public static void RunAll()
+{
+    using var form = new Form1();
+
+    void PrintAndReset(string testName)
+    {
+        Console.WriteLine(\$"[{testName}] Result label: \"{form.lblResult.Text}\"");
+        InvokeClear(form);
+    }
+
+    // 1) Invalid distance
+    SetControls(form, "abc", "30", "Category One", "Male");
+    InvokeCalculate(form);
+    PrintAndReset("Invalid distance");
+
+    // 2) Negative age
+    SetControls(form, "10", "-5", "Category One", "Male");
+    InvokeCalculate(form);
+    PrintAndReset("Negative age");
+
+    // 3) Free under 12
+    SetControls(form, "100", "10", "Category Two", "Female");
+    InvokeCalculate(form);
+    PrintAndReset("Free under 12");
+
+    // 4) Invalid category (simulate wrong selection)
+    SetControls(form, "50", "20", "Invalid Category", "Male");
+    InvokeCalculate(form);
+    PrintAndReset("Invalid category");
+
+    // 5) Female discount applied
+    SetControls(form, "10", "25", "Category Three", "Female");
+    InvokeCalculate(form);
+    PrintAndReset("Female discount");
+
+    // 6) Male no discount
+    SetControls(form, "10", "25", "Category Three", "Male");
+    InvokeCalculate(form);
+    PrintAndReset("Male no discount");
+
+    // 7) Clear button behavior
+    SetControls(form, "123", "45", "Category One", "Female");
+    InvokeClear(form);
+    Console.WriteLine("[Clear button] txtDistance empty: " + string.IsNullOrEmpty(form.txtDistance.Text));
+
+    // 8) Exit (invokes Close)
+    SetControls(form, "1", "30", "Category One", "Male");
+    InvokeExit(form);
+    Console.WriteLine("[Exit] Form closed state cannot be directly observed here; ensure Close() was wired correctly.");
+}
     //---------------------------------------------------------
         }
     }

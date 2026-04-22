@@ -1,32 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "C:\\Users\\Unknown\\Documents\\GitHub\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "C:\\Users\\Unknown\\Documents\\GitHub\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\Unknown\\Documents\\GitHub\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\ignat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\obj\\",
+        "projectPath": "C:\\Users\\Unknown\\Documents\\GitHub\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\Unknown\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Unknown\\Documents\\GitHub\\TicketApplicationSystem\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ignat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Unknown\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0-windows": {
-            "framework": "net10.0-windows7.0",
+          "net10.0-windows7.0": {
             "targetAlias": "net10.0-windows",
             "projectReferences": {}
           }
@@ -44,8 +41,7 @@
         "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
-        "net10.0-windows": {
-          "framework": "net10.0-windows7.0",
+        "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
           "imports": [
             "net461",
@@ -66,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

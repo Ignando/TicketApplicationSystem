@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\ignat\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ignat\\.nuget\\packages"
+      "C:\\Users\\lodew\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lodew\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,

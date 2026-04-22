@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "C:\\Users\\lodew\\source\\repos\\Ignando\\TicketApplicationSystem\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "C:\\Users\\lodew\\source\\repos\\Ignando\\TicketApplicationSystem\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\lodew\\source\\repos\\Ignando\\TicketApplicationSystem\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\ignat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ignat\\Documents\\TicketApplicationSystem\\WinFormsApp1\\obj\\",
+        "projectPath": "C:\\Users\\lodew\\source\\repos\\Ignando\\TicketApplicationSystem\\TicketApplicationSystem\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\lodew\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lodew\\source\\repos\\Ignando\\TicketApplicationSystem\\TicketApplicationSystem\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ignat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lodew\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

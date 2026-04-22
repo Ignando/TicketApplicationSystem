@@ -8,6 +8,9 @@ namespace WinFormsApp1
         [STAThread]
         static void Main()
         {
+
+            // Logic Development - Wian Sandenbengh
+
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();

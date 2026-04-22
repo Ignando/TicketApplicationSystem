@@ -45,7 +45,7 @@ namespace WinFormsApp1
         if (age <12)
         {
             //Sending output to the Result label
-            lblResult.Text = "Total: Free (age under 12)";
+            lblResult.Text = $"{txtName} Total: Free (age under 12)";
             return;
         }
         //Creating a ratePerKm var and checking what Category is chosen the applying the price to the var
@@ -74,7 +74,7 @@ namespace WinFormsApp1
         //Setting an var that gets the total 
         double total = baseFare * (1.0 - discount);
         //Sending output to the Result label
-        lblResult.Text $"Base: {baseFare:C2} Discount: {discount * 100}% Total: {total:C2}";
+        lblResult.Text $"{txtName} Base: {baseFare:C2} Discount: {discount * 100}% Total: {total:C2}";
     }
     //Clear Button Logic Implementation
     private void BtnClear_Click(object sender, EventArgs e)

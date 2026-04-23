@@ -102,6 +102,7 @@
             pnlGender.Padding = new Padding(8);
             pnlGender.Size = new Size(135, 56);
             pnlGender.TabIndex = 11;
+            pnlGender.Paint += pnlGender_Paint;
             // 
             // radioMale
             // 
@@ -114,6 +115,7 @@
             radioMale.TabStop = true;
             radioMale.Text = "Male";
             radioMale.UseVisualStyleBackColor = true;
+            radioMale.CheckedChanged += radioMale_CheckedChanged;
             // 
             // lblGender
             // 
@@ -137,6 +139,7 @@
             radioFemale.TabStop = true;
             radioFemale.Text = "Female";
             radioFemale.UseVisualStyleBackColor = true;
+            radioFemale.CheckedChanged += radioFemale_CheckedChanged;
             // 
             // txtAge
             // 
@@ -157,6 +160,7 @@
             txtName.Name = "txtName";
             txtName.Size = new Size(264, 23);
             txtName.TabIndex = 4;
+            txtName.TextChanged += txtName_TextChanged;
             // 
             // lblAge
             // 
@@ -220,6 +224,7 @@
             comboCategory.Name = "comboCategory";
             comboCategory.Size = new Size(126, 23);
             comboCategory.TabIndex = 7;
+            comboCategory.SelectedIndexChanged += comboCategory_SelectedIndexChanged;
             // 
             // txtDistance
             // 
@@ -230,6 +235,7 @@
             txtDistance.Name = "txtDistance";
             txtDistance.Size = new Size(107, 23);
             txtDistance.TabIndex = 6;
+            txtDistance.TextChanged += txtDistance_TextChanged;
             // 
             // lblDistance
             // 
@@ -305,6 +311,7 @@
             btnCalculate.TabIndex = 12;
             btnCalculate.Text = "Calculate Ticket";
             btnCalculate.UseVisualStyleBackColor = false;
+            btnCalculate.Click += btnCalculate_Click;
             // 
             // btnExit
             // 
@@ -319,6 +326,7 @@
             btnExit.TabIndex = 11;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
             // 
             // btnClear
             // 
@@ -334,6 +342,7 @@
             btnClear.TabIndex = 10;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // label7
             // 
@@ -424,6 +433,7 @@
             pnlTicket.Padding = new Padding(15);
             pnlTicket.Size = new Size(206, 272);
             pnlTicket.TabIndex = 9;
+            pnlTicket.Paint += pnlTicket_Paint;
             // 
             // lblDiscountResult
             // 

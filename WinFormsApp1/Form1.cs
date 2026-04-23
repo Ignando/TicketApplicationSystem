@@ -10,6 +10,16 @@ namespace WinFormsApp1
         {
             InitializeComponent();
             SetupSimpleUI();
+
+            comboCategory.Items.Clear();
+            comboCategory.Items.AddRange(new[]
+            {
+                "Category One",
+                "Category Two",
+                "Category Three"
+            });
+            comboCategory.SelectedIndex = 0;
+            radioMale.Checked = true;
         }
 
         // -------------------------------
@@ -88,5 +98,68 @@ namespace WinFormsApp1
         {
             // Intentionally empty - kept to satisfy Designer event hookup.
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtName.Clear();
+            txtAge.Clear();
+            txtDistance.Clear();
+            comboCategory.SelectedIndex = 0;
+            radioMale.Checked = true;
+            lblResult.Text = "R 0.00";
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtAge.Text, out int age))
+            {
+                MessageBox.Show("Invalid age");
+                return;
+            }
+
+            if (!double.TryParse(txtDistance.Text, out double distance))
+            {
+                MessageBox.Show("Invalid distance");
+                return;
+            }
+
+            string gender = radioMale.Checked ? "Male" : "Female";
+            string category = comboCategory.SelectedItem.ToString();
+
+            // ---- CALCULATIONS ----
+            double ratePerKm = category switch
+            {
+                "Category One" => 20.0,
+                "Category Two" => 35.0,
+                "Category Three" => 50.0,
+                _ => 0.0
+            };
+
+            if (age < 12)
+            {
+                lblResult.Text = "R 0.00";
+                lblDiscountResult.Text = "Free";
+            }
+            else
+            {
+                double baseFare = ratePerKm * distance;
+                double discount = gender == "Female" ? 0.5 : 0.0;
+                double total = baseFare * (1 - discount);
+
+                lblResult.Text = $"R {total:F2}";
+                lblDiscountResult.Text = $"{discount * 100}%";
+            }
+
+            // ---- UPDATE UI FIELDS ----
+            lblNameResult.Text = txtName.Text;
+            lblCategoryResult.Text = category;
+            lblDistanceResult.Text = distance.ToString();
+        }
+
     }
 }

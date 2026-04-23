@@ -88,5 +88,55 @@ namespace WinFormsApp1
         {
             // Intentionally empty - kept to satisfy Designer event hookup.
         }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlGender_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void radioMale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioFemale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDistance_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlTicket_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

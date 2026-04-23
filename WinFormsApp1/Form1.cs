@@ -99,36 +99,6 @@ namespace WinFormsApp1
             // Intentionally empty - kept to satisfy Designer event hookup.
         }
 
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlGender_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void radioMale_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioFemale_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboCategory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDistance_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtName.Clear();
@@ -161,7 +131,7 @@ namespace WinFormsApp1
             string gender = radioMale.Checked ? "Male" : "Female";
             string category = comboCategory.SelectedItem.ToString();
 
-            // ---- CALCULATIONS (same as your logic) ----
+            // ---- CALCULATIONS ----
             double ratePerKm = category switch
             {
                 "Category One" => 20.0,
@@ -191,9 +161,5 @@ namespace WinFormsApp1
             lblDistanceResult.Text = distance.ToString();
         }
 
-        private void pnlTicket_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
